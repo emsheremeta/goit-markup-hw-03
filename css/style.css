@@ -60,13 +60,13 @@ body {
 .title-color{
     color: var(--title-color);
 }
-.page.header {
-    display: flex;
-}
-.container.header {
-display: flex;
-}
+
 /* page-header */
+
+.container.header {
+    display: flex; 
+    }
+
 .page-header{
     border-bottom: 1px solid #ECECEC;
 
@@ -112,11 +112,17 @@ display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
 
+    margin-right: 30px;
+
     color: var(--title-color) ;
     text-decoration: none;
 
    
 }
+.site-nav .link:last-child{
+    margin-right: 0;
+}
+
 .site-nav .link:hover,
  .site-nav .link:focus{
     color:var(--accent-color) ;
@@ -124,6 +130,8 @@ display: flex;
 .site-nav .link.current{
     color: var(--accent-color);
 }
+
+/* contact */
 .contact a{
     color:var(--primary-text-color);
     font-weight: 500;
@@ -138,13 +146,22 @@ display: flex;
 }
 .contact {
     display: flex;
-    margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin: 0;
+    padding: 0;
+    
 }
-.contact .item + .item{
-    margin-left: 50px;
-}
+
+ .contact .contact-nav:not(:last-child){
+     margin-right: 50px;
+     margin-left: 313px;
+ }
+ .contact .contact-item{
+     padding-top: 32px;
+     padding-bottom: 32px;
+
+     display: block;
+ }
+
 /* hero block */
 .hero{
     background-color: #2F303A;
@@ -256,7 +273,7 @@ display: flex;
 
  .item:last-child{
 
-    margin-right:30px ;
+    margin-right:0; ;
 } 
 
 /* team */
@@ -306,7 +323,7 @@ display: flex;
    line-height: 1.18;
    text-align: center;
    letter-spacing: 0.03em;
-
+   margin-top: 0;
 
 }
 .team-text{
@@ -315,7 +332,7 @@ display: flex;
     text-align: center;
     letter-spacing: 0.03em;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     
 }
 .portfolio-card{
@@ -389,7 +406,7 @@ display: flex;
     border: 1px solid #ECECEC;
 
 }
-}
+
 .button-list{
     list-style-type: none;
 }
@@ -475,6 +492,10 @@ display: flex;
     margin-bottom: 0;
 
     display: flex;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    
 }
 
 .white-color{
@@ -513,8 +534,4 @@ display: flex;
     margin-top: 0;
     margin-bottom: 20px;
 }
-/* main-contact */
-.main-contact{
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+
